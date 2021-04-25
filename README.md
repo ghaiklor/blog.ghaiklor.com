@@ -1,5 +1,7 @@
 # blog.ghaiklor.com
 
+[![Build Status](https://travis-ci.com/ghaiklor/blog.ghaiklor.com.svg?branch=master)](https://travis-ci.com/ghaiklor/blog.ghaiklor.com)
+
 My personal blog about Node.js, TypeScript, JavaScript, Developer Experience and other technical stuff I’m encountering during my work\hobby.
 
 ## Why GitHub Pages
