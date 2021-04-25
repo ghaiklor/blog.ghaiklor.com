@@ -1,37 +1,26 @@
-# Jekyll Minimal Mistakes Forestry Starter
+# blog.ghaiklor.com
 
-![Minimal Mistakes Jekyll Theme](assets/images/mm-layout-splash.png)
+My personal blog about Node.js, TypeScript, JavaScript, Developer Experience and other technical stuff I’m encountering during my work\hobby.
 
-## Prerequisites
+## Why GitHub Pages
 
-- Jekyll > 3.8
+This blog has been migrating from time to time for a 7 years now.
 
-## Content Management
+The first platform where I’ve been hosting was Medium.
+But right from the moment when they integrated a paywall, I abandoned them and moved to Wordpress.
 
-![Edit your content in Forestry CMS](assets/images/forestry-cms.png)
+What is wrong with Wordpress?
+I’m paying them $96 a year and I don’t even know for what.
+SEO optimization is a mess, editors are changing once a year and content is broking.
+So you can fix it only by communicating with support.
+Screw you, Wordpress!
 
-This project has been pre-configured to work with [Forestry](https://forestry.io), just import your repository ✨. \
-Any changes you make will be commited back to the repository.
+So that I’ve decided.
+I need to own my content and my own sources.
+That’s why I’m using GitHub Pages and Jekyll to build a blog.
 
-[![Import into Forestry](https://assets.forestry.io/import-to-forestryK.svg)](https://app.forestry.io/quick-start?repo=dirtyf/jekyll-minimal-mistakes-forestry&engine=jekyll)
+To easier content management process, I’m using Forestry that is integrated with this repository.
 
-## Deployment and hosting
+## License
 
-Import your repository in [Vercel](https://vercel.com) and deploy automatically for free.
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/git)
-
-## Development
-
-```bash
-# Clone your repository
-# Go in your project's folder
-# Start local server
-bundle exec jekyll serve
-```
-
-## Customization
-
-Head over the [theme's documentation](https://github.com/mmistakes/minimal-mistakes) to learn how to customize your site.
-
-## [LICENSE](https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE)
+[CC-BY-4.0](./LICENSE)
