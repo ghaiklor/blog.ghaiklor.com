@@ -6,7 +6,7 @@ fields:
   type: text
   config:
     required: true
-    min: 
+    min: 20
   label: Title
   description: The name of a blog post
 - name: excerpt
@@ -30,24 +30,35 @@ fields:
   type: field_group
   config: {}
   fields:
-  - name: teaser
+  - name: overlay_image
     type: file
     config:
       maxSize: 64
-    label: Teaser
-    description: Teaser image used in the “Related Posts”
-  - name: image
-    type: file
+    label: Overlay Image
+    description: Header image you’d like to overlay
+  - name: overlay_filter
+    type: number
+    label: Overlay Filter
+    description: Opacity to overlay on top of the header image
+    default: 0.5
+    required: true
     config:
-      maxSize: 64
-    label: Image
-    description: A large full-width header image
+      min: 0.5
+      max: 1
+      step: 0.1
+      required: true
   - name: caption
     type: text
     config:
       required: true
     label: Caption
     description: A caption or attribution for the image, e.g. "Photo Credit"
+  - name: teaser
+    type: file
+    config:
+      maxSize: 64
+    label: Teaser
+    description: Teaser image used in the “Related Posts”
   label: Header
   description: A large full-width header image, its teaser and other header related
     configuration
