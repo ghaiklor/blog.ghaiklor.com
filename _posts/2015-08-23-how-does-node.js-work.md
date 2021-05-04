@@ -1,34 +1,35 @@
 ---
 title: How does Node.js work?
-excerpt: Were you ever wondering how Node.js works inside out? How JavaScript gets
-  access to file systems, network, etc? How C++ code becomes callable from JavaScript?
-  These and many other questions are answered here!
+excerpt: >-
+  Were you ever wondering how Node.js works inside out? How JavaScript gets
+  access to file systems, network, etc? How C++ code becomes callable from
+  JavaScript? These and many other questions are answered here!
 header:
-  teaser: "/uploads/2021-05-04/node-js.jpg"
-  image: "/uploads/2021-05-04/node-js.jpg"
+  teaser: /uploads/2015-08-23/node-js.jpg
+  image: /uploads/2015-08-23/node-js.jpg
   caption: 'Photo Credit: Prince Pal'
 categories:
-- Explained
+  - Explained
 tags:
-- node.js
-- javascript
-- c++
-- virtual machine
-- v8
-
+  - node.js
+  - javascript
+  - c++
+  - virtual machine
+  - v8
 ---
+
 Hi everyone!
-My name is Eugene Obrezkov, and today I want to talk about one of the “scariest” platforms — Node.js.
-I will answer one of the most complicated questions about Node.js — “**How does Node.js work?**”
+My name is Eugene Obrezkov, and today I want to talk about one of the “scariest” platforms — Node.js.
+I will answer one of the most complicated questions about Node.js — “**How does Node.js work?**”.
 
 I will present this article as if Node.js didn’t exist at all.
 This way, it should be easier for you to understand what’s going on under the hood.
 
-The code found in this post is taken from existing NodeJS sources, so after reading this article, you should be more comfortable with NodeJS.
+The code found in this post is taken from existing Node.js sources, so after reading this article, you should be more comfortable with Node.js.
 
 ## What do we need this for?
 
-The first question that may come to your mind — **“What do we need this for?”**
+The first question that may come to your mind — **“What do we need this for?”**.
 
 Here, I’d like to quote Vyacheslav Egorov:
 
@@ -56,8 +57,8 @@ Not really!
 Here are the questions that need to be answered:
 
 - Does browser expose low-level API to JavaScript? No!
-- Does it allow to run JavaScript from somewhere else? — Both yes and no, it’s complicated!
-- Do we need all the DOM stuff that the browser gives us? — No! It’s overhead.
+- Does it allow to run JavaScript from somewhere else? Both yes and no, it’s complicated!
+- Do we need all the DOM stuff that the browser gives us? No! It’s overhead.
 - Do we need browser at all? No!
 
 We don’t need that.
@@ -69,7 +70,7 @@ If the browser is not a requirement for executing JavaScript, **what executes Ja
 
 **Virtual Machine executes JavaScript!**
 
-VM provides a high-level abstraction — that of a high-level programming language (compared to the low-level ISA abstraction of the system).
+VM provides a high-level abstraction — that of a high-level programming language (compared to the low-level ISA abstraction of the system).
 
 VM is designed to execute a single computer program by providing an abstracted and platform-independent program execution environment.
 
@@ -91,7 +92,7 @@ You can now use V8 API that allows you to compile and run JavaScript code.
 **V8 can expose C++ to JavaScript**.
 It’s very important as we want to make low-level API available within JavaScript.
 
-Those two points are enough to imagine rough implementation of our idea — “How we can run JavaScript with access to low-level API”.
+Those two points are enough to imagine rough implementation of our idea — “How we can run JavaScript with access to low-level API”.
 
 Let’s draw a line here about all this stuff above, because in the next chapter we will start with C++ code.
 You can take Virtual Machine, in our case V8 -> integrate it in our C++ project -> expose C++ to JavaScript with V8 help.
@@ -167,7 +168,7 @@ But what is the question mark after “_Run JavaScript_” in chapter’s title?
 **There is a little problem with implementation above**.
 We missed one very important thing.
 
-Imagine, that you wrote a lot of C++ methods (_around 10k SLOC_) which can work with _fs_, _http_, _crypto_, etc…
+Imagine, that you wrote a lot of C++ methods (_around 10k LOC_) which can work with _fs_, _http_, _crypto_, etc…
 We have assigned them _[C++ callbacks]_ to _FunctionTemplate_ instances and import them _[FunctionTemplate]_ in _ObjectTemplate_.
 After getting JavaScript instance of this _ObjectTemplate_ we have access to all the _FunctionTemplate_ instances from JavaScript via global scope.
 Looks like everything works great, but…
@@ -191,11 +192,11 @@ That module loader should handle loading C++ modules and JavaScript modules so w
 
 ## C++ Module Loader
 
-_There will be a lot of C++ code here, so try not to lose your mind :)_
+Disclaimer: _There will be a lot of C++ code here, so try not to lose your mind :)_
 
 Let’s start with basics of all module loaders.
 Each module loader must have a variable that contains all modules (_or information on how to get them_).
-Let’s declare C++ structure to store information about C++ modules and name it _node\_module_.
+Let’s declare C++ structure to store information about C++ modules and name it *node_module*.
 
 <https://gist.github.com/ghaiklor/ac2ba1b5003c99f12e56>
 
@@ -203,29 +204,29 @@ We can store information about existing modules in this structure.
 As a result, we have a simple dictionary of all available C++ modules.
 
 I will not explain all the fields from the structure above, but I want you to pay attention to one.
-In _nm\_filename_ we can store filename of our module, so we know where to load it from.
-In _nm\_register\_func_ and _nm\_context\_register\_func,_ we can store functions we need to call when the module is required.
+In *nm_filename* we can store filename of our module, so we know where to load it from.
+In *nm_register_func* and *nm_context_register_func*, we can store functions we need to call when the module is required.
 These functions will instantiate _Template_ instance.
-And _nm\_modname_ can store module name (_not filename_).
+And *nm_modname* can store module name (_not filename_).
 
 Next, we need to implement helper methods that work with this structure.
-We can write a simple method that can save information to our _node\_module_ structure and then use this method in our module definitions.
-Let’s call it _node\_module\_register_.
+We can write a simple method that can save information to our *node_module* structure and then use this method in our module definitions.
+Let’s call it *node_module_register*.
 
 <https://gist.github.com/ghaiklor/f83961d73e1bca8515e3>
 
-As you can see, all we are doing here is just saving new information about module into our structure _node\_module_.
+As you can see, all we are doing here is just saving new information about module into our structure *node_module*.
 
 Now we can simplify registering process using a macro.
 Let’s declare a macro you can use in your C++ module.
-This macro is just a wrapper for _node\_module\_register_ method.
+This macro is just a wrapper for *node_module_register* method.
 
 <https://gist.github.com/ghaiklor/baf48d481128413d6dd8>
 
-First macro is a wrapper for _node\_module\_register_ method.
+First macro is a wrapper for *node_module_register* method.
 The other one is just a wrapper for previous macro with some pre-defined arguments.
 As a result we have a macro that accepts two arguments: _modname_ and _regfunc_.
-When it’s called, we are saving new module information in our _node\_module_ structure.
+When it’s called, we are saving new module information in our *node_module* structure.
 What do _modname_ and _regfunc_ mean?
 Well…
 _modname_ is just our module name, like _fs_, for instance.
@@ -233,16 +234,16 @@ _regfunc_ is a module method we talked about earlier.
 This method should be responsible for _V8 Template_ initialization and assigning it to _ObjectTemplate_.
 
 As you can see, we can declare each C++ module within a macro that accepts module name (_modname_) and initialization function (_regfunc_) that will be called when the module is required.
-All we need to do is just create C++ methods that can read that information from _node\_module_ structure and call _regfunc_ method.
+All we need to do is just create C++ methods that can read that information from *node_module* structure and call _regfunc_ method.
 
-Let’s write a simple method that will search for a module in _the node\_module_ structure by its name.
-We’ll call it _get\_builtin\_module_.
+Let’s write a simple method that will search for a module in the *node_module* structure by its name.
+We’ll call it *get_builtin_module*.
 
 <https://gist.github.com/ghaiklor/aade1f6bfd3b598bc051>
 
-This will return declared module if name matches the _nm\_modname_ from _node\_module_ structure.
+This will return declared module if name matches the *nm_modname* from *node_module* structure.
 
-Based on information from _node\_module_ structure, we can write a simple method that will load the C++ module and assign _V8 Template_ instance to our _ObjectTemplate_.
+Based on information from *node_module* structure, we can write a simple method that will load the C++ module and assign _V8 Template_ instance to our _ObjectTemplate_.
 As a result, this _ObjectTemplate_ will be sent as a JavaScript instance to JavaScript context.
 
 <https://gist.github.com/ghaiklor/ddd6c57e9f8cbae06d81>
@@ -250,7 +251,7 @@ As a result, this _ObjectTemplate_ will be sent as a JavaScript instance to Ja
 A few notes regarding the code above.
 _Binding_ takes module name as an argument.
 This argument is a module name you gave that via macro.
-We are looking for information about this module via _get\_builtin\_module_ method.
+We are looking for information about this module via *get_builtin_module* method.
 If we find it, we call initialization function from this module, sending some useful arguments like _exports_.
 _exports_ is an _ObjectTemplate_ instance, so we can use _V8 Template_ API on it.
 After all these operations, we get the _exports_ object as a result from _Binding_ method.
@@ -261,7 +262,7 @@ We do this at the last line by wrapping _Binding_ method in _FunctionTemplate_ a
 
 At this stage, you can call _process.binding(‘fs’)_ for instance, and get native bindings for it.
 
-Here is an example of a built-in module with omitted logic for simplicity_._
+Here is an example of a built-in module with omitted logic for simplicity.
 
 <https://gist.github.com/ghaiklor/ac22b0ce38f23847e00b>
 
@@ -294,11 +295,11 @@ That means that all the JavaScript sources are accessible at compile-time.
 This allows us to wrap JavaScript sources into a C++ header file, that we can use.
 
 There’s a Python tool called _js2c.py_ for this (_located under tools/js2c.py_).
-It generates _node\_natives.h_ header file with wrapped JavaScript code.
-_node\_natives.h_ can be included in any C++ code to get JavaScript sources within C++.
+It generates *node_natives.h* header file with wrapped JavaScript code.
+*node_natives.h* can be included in any C++ code to get JavaScript sources within C++.
 
 Now we can use JavaScript sources in C++ context — let’s try it out.
-We can implement a simple method _DefineJavaScript_ that gets JavaScript sources from _node\_natives.h_ and assigns them to _ObjectTemplate_ instance.
+We can implement a simple method _DefineJavaScript_ that gets JavaScript sources from *node_natives.h* and assigns them to _ObjectTemplate_ instance.
 
 <https://gist.github.com/ghaiklor/259372c5049dbc52b947>
 
@@ -312,7 +313,7 @@ As a result, JavaScript native modules will be returned when calling _process.bi
 
 So, that’s cool.
 But another improvement can be made here by defining GYP task in _node.gyp_ file and calling _js2c.py_ tool from it.
-This will make it so that when Node.js is compiling, JavaScript sources will also be wrapped into _node\_natives.h_ header file.
+This will make it so that when Node.js is compiling, JavaScript sources will also be wrapped into *node_natives.h* header file.
 
 By now, we have JavaScript sources of our native modules available as the _process.binding(‘natives’)_.
 Let’s write simple JavaScript wrapper for _NativeModule_ now.
@@ -324,20 +325,20 @@ This will first check if module already exists in cache, if so — gets it f
 
 Let’s inspect _cache_ and _compile_ methods now.
 
-All _cache_ does is just setting _NativeModule_ instance to a static object _\_cache_ in _NativeModule_.
+All _cache_ does is just setting _NativeModule_ instance to a static object *_cache* in _NativeModule_.
 
 More interesting is the _compile_ method.
-First, we are getting sources of required module from _\_source_ (_we set this static property with process.binding(‘natives’)_).
+First, we are getting sources of required module from *_source* (_we set this static property with process.binding(‘natives’)_).
 We are then wrapping them in a function with _wrap_ method.
-As you can see, resulting function accepts _exports_, _require_, _module_, _\_\_filename_ and _\_\_dirname_ arguments.
+As you can see, resulting function accepts _exports_, _require_, _module_, *__filename* and *__dirname* arguments.
 Afterwards, we call this function with required arguments.
-As a result, our JavaScript module is wrapped in scope that has _exports_ as pointer to _NativeModule.exports_, _require_ as pointer to _NativeModule.require_, _module_ as pointer to _NativeModule_ instance itself and _\_\_filename_ as a string with current file name.
+As a result, our JavaScript module is wrapped in scope that has _exports_ as pointer to _NativeModule.exports_, _require_ as pointer to _NativeModule.require_, _module_ as pointer to _NativeModule_ instance itself and *__filename* as a string with current file name.
 Now you know where all the stuff like _module_ and _require_ is coming from in your JavaScript code.
 They are just pointers to _NativeModule_ instance :)
 
 **Another thing is _Module_ loader implementation.**
 
-_Module_ loader implementation is the same as with _NativeModule_, the difference is that sources are not taken from _node\_natives.h_ header file, but from files we can read with _fs_ native module.
+_Module_ loader implementation is the same as with _NativeModule_, the difference is that sources are not taken from *node_natives.h* header file, but from files we can read with _fs_ native module.
 So we are doing all the same stuff as _wrap_, _cache_ and _compile_, only with sources read from the file.
 
 Great, now we know how to require native modules or modules from your working directory.
@@ -355,7 +356,7 @@ It’s just a lot of code that does something like _global.Buffer = NativeModule
 
 Second step is running the main script which you send in Node.js CLI as an argument.
 Logic is simple here.
-It just parses _process.argv\[1\]_ and creates _Module_ instance with its value as a constructor value.
+It just parses *process.argv[1]* and creates _Module_ instance with its value as a constructor value.
 So, _Module_ can read sources from file -> cache and compile it as _NativeModule_ does with pre-compiled JavaScript sources.
 
 There’s not much I can add here, it’s simple, if you want more details though, you can look at _src/node.js_ file in node repository.
