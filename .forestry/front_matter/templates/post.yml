@@ -16,6 +16,16 @@ fields:
     min: 80
   label: Excerpt
   description: Take (a short extract) from a post
+- name: categories
+  type: tag_list
+  default: []
+  label: Categories
+  description: Provide a category that is suitable for the post
+- name: tags
+  type: tag_list
+  default: []
+  label: Tags
+  description: Provide a list of tags that are appliable to the post
 - name: header
   type: field_group
   config: {}
