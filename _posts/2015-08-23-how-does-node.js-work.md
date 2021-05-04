@@ -4,9 +4,10 @@ excerpt: Were you ever wondering how Node.js works inside out? How JavaScript ge
   access to file systems, network, etc? How C++ code becomes callable from JavaScript?
   These and many other questions are answered here!
 header:
-  teaser: assets/uploads/2015-08-23/node-js.jpg
-  image: assets/uploads/2015-08-23/node-js.jpg
+  overlay_filter: 0.5
+  overlay_image: assets/uploads/2015-08-23/node-js.jpg
   caption: 'Photo Credit: Prince Pal'
+  teaser: assets/uploads/2015-08-23/node-js.jpg
 categories:
 - Explained
 tags:
