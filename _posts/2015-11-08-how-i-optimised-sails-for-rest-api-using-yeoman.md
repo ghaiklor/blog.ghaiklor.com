@@ -1,22 +1,24 @@
 ---
+title: How I optimised Sails for REST API using Yeoman
+excerpt: >-
+  We often face the problem of duplicating code at our work. I’ve faced the same
+  when working with Sails and REST API. What if we could automate some
+  workflows?
 categories:
-- Tools
+  - Tools
 tags:
-- node.js
-- sails
-- javascript
-- rest
-- api
-- yeoman
-- scaffold
+  - node.js
+  - sails
+  - javascript
+  - rest
+  - api
+  - yeoman
+  - scaffold
 header:
-  overlay_filter: 0.5
   overlay_image: assets/uploads/2015-11-08/sails.jpg
+  overlay_filter: 0.5
   caption: Photo by Jeremy Bishop on Unsplash
   teaser: assets/uploads/2015-11-08/sails.jpg
-title: How I optimised Sails for REST API using Yeoman
-excerpt: We often face the problem of duplicating code at our work. I’ve faced the
-  same when working with Sails and REST API. What if we could automate some workflows?
 ---
 
 _TL;DR_ If you are not interested in reading the post and want to see the results, check out my repository — [generator-sails-rest-api](https://github.com/ghaiklor/generator-sails-rest-api).
