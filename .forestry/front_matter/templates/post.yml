@@ -62,3 +62,5 @@ fields:
   label: Header
   description: A large full-width header image, its teaser and other header related
     configuration
+pages:
+- _posts/how-i-optimised-sails-for-rest-api-using-yeoman.md
