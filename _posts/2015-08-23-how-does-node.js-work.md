@@ -1,23 +1,22 @@
 ---
 title: How does Node.js work?
-excerpt: >-
-  Were you ever wondering how Node.js works inside out? How JavaScript gets
-  access to file systems, network, etc? How C++ code becomes callable from
-  JavaScript? These and many other questions are answered here!
+excerpt: Were you ever wondering how Node.js works inside out? How JavaScript gets
+  access to file systems, network, etc? How C++ code becomes callable from JavaScript?
+  These and many other questions are answered here!
 header:
-  teaser: /uploads/2015-08-23/node-js.jpg
-  image: /uploads/2015-08-23/node-js.jpg
+  teaser: assets/uploads/2015-08-23/node-js.jpg
+  image: assets/uploads/2015-08-23/node-js.jpg
   caption: 'Photo Credit: Prince Pal'
 categories:
-  - Explained
+- Explained
 tags:
-  - node.js
-  - javascript
-  - c++
-  - virtual machine
-  - v8
----
+- node.js
+- javascript
+- c++
+- virtual machine
+- v8
 
+---
 Hi everyone!
 My name is Eugene Obrezkov, and today I want to talk about one of the “scariest” platforms — Node.js.
 I will answer one of the most complicated questions about Node.js — “**How does Node.js work?**”.
