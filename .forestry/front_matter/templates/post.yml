@@ -52,4 +52,4 @@ fields:
   description: A large full-width header image, its teaser and other header related
     configuration
 pages:
-- _posts/how-does-node.js-work.md
+- _posts/2021-05-04-how-does-node.js-work.md
