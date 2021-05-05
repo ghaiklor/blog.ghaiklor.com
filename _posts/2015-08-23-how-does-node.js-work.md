@@ -127,7 +127,7 @@ In a nutshell, you can wrap C++ objects/structures within JavaScript objects.
 Look at this simple example.
 All this does is expose the C++ method _LogCallback_ to the global JavaScript context.
 
-<https://gist.github.com/ghaiklor/7f9d22dddae9b2e1f2f5>
+{% gist 7f9d22dddae9b2e1f2f5 %}
 
 At line #2, we are creating new _ObjectTemplate_.
 Then at line #3 we are creating new _FunctionTemplate_ and associate C++ method _LogCallback_ with it.
@@ -148,7 +148,7 @@ If you want to **run your JavaScript in created context**, you can make just two
 
 Let’s look at this example, where we are creating a new _Context_ and running JavaScript inside.
 
-<https://gist.github.com/ghaiklor/8000ff81a90d8b96dd6e>
+{% gist 8000ff81a90d8b96dd6e %}
 
 At line #2, we are creating a JavaScript context (_we can change it with templates described above_).
 At line #5, we are making this context active for compiling and running JavaScript code.
@@ -199,7 +199,7 @@ Let’s start with basics of all module loaders.
 Each module loader must have a variable that contains all modules (_or information on how to get them_).
 Let’s declare C++ structure to store information about C++ modules and name it *node_module*.
 
-<https://gist.github.com/ghaiklor/ac2ba1b5003c99f12e56>
+{% gist ac2ba1b5003c99f12e56 %}
 
 We can store information about existing modules in this structure.
 As a result, we have a simple dictionary of all available C++ modules.
@@ -214,7 +214,7 @@ Next, we need to implement helper methods that work with this structure.
 We can write a simple method that can save information to our *node_module* structure and then use this method in our module definitions.
 Let’s call it *node_module_register*.
 
-<https://gist.github.com/ghaiklor/f83961d73e1bca8515e3>
+{% gist f83961d73e1bca8515e3 %}
 
 As you can see, all we are doing here is just saving new information about module into our structure *node_module*.
 
@@ -222,7 +222,7 @@ Now we can simplify registering process using a macro.
 Let’s declare a macro you can use in your C++ module.
 This macro is just a wrapper for *node_module_register* method.
 
-<https://gist.github.com/ghaiklor/baf48d481128413d6dd8>
+{% gist baf48d481128413d6dd8 %}
 
 First macro is a wrapper for *node_module_register* method.
 The other one is just a wrapper for previous macro with some pre-defined arguments.
@@ -240,14 +240,14 @@ All we need to do is just create C++ methods that can read that information from
 Let’s write a simple method that will search for a module in the *node_module* structure by its name.
 We’ll call it *get_builtin_module*.
 
-<https://gist.github.com/ghaiklor/aade1f6bfd3b598bc051>
+{% gist aade1f6bfd3b598bc051 %}
 
 This will return declared module if name matches the *nm_modname* from *node_module* structure.
 
 Based on information from *node_module* structure, we can write a simple method that will load the C++ module and assign _V8 Template_ instance to our _ObjectTemplate_.
 As a result, this _ObjectTemplate_ will be sent as a JavaScript instance to JavaScript context.
 
-<https://gist.github.com/ghaiklor/ddd6c57e9f8cbae06d81>
+{% gist ddd6c57e9f8cbae06d81 %}
 
 A few notes regarding the code above.
 _Binding_ takes module name as an argument.
@@ -265,7 +265,7 @@ At this stage, you can call _process.binding(‘fs’)_ for instance, and get na
 
 Here is an example of a built-in module with omitted logic for simplicity.
 
-<https://gist.github.com/ghaiklor/ac22b0ce38f23847e00b>
+{% gist ac22b0ce38f23847e00b %}
 
 The code above will create a binding with a name “_v8”_ that exports JavaScript object, so that calling _process.binding(‘v8’)_ from JavaScript context gets this object.
 
@@ -299,10 +299,10 @@ There’s a Python tool called _js2c.py_ for this (_located under tools/js2c.py_
 It generates *node_natives.h* header file with wrapped JavaScript code.
 *node_natives.h* can be included in any C++ code to get JavaScript sources within C++.
 
-Now we can use JavaScript sources in C++ context — let’s try it out.
+Now we can use JavaScript sources in C++ context — let’s try it out.
 We can implement a simple method _DefineJavaScript_ that gets JavaScript sources from *node_natives.h* and assigns them to _ObjectTemplate_ instance.
 
-<https://gist.github.com/ghaiklor/259372c5049dbc52b947>
+{% gist 259372c5049dbc52b947 %}
 
 In the code above, we are iterating through each native JavaScript module and setting them into _ObjectTemplate_ instance with module name as a key and module itself as a value.
 The last thing we need to do is call _DefineJavaScript_ with _ObjectTemplate_ instance as _target_.
@@ -319,7 +319,7 @@ This will make it so that when Node.js is compiling, JavaScript sources will als
 By now, we have JavaScript sources of our native modules available as the _process.binding(‘natives’)_.
 Let’s write simple JavaScript wrapper for _NativeModule_ now.
 
-<https://gist.github.com/ghaiklor/f11c8424310afb4b9018>
+{% gist f11c8424310afb4b9018 %}
 
 Now, to load a module, you call _NativeModule.require()_ method with module name you want to load.
 This will first check if module already exists in cache, if so — gets it from cache, otherwise the module is compiled, cached and returned as _exports_ object.
@@ -389,7 +389,7 @@ Without _libuv_ Node.js is just a synchronous JavaScript/C++ execution.
 So, we can include _libuv_ sources into Node.js and create V8 Environment with _libuv_ default event loop in there.
 Here is an implementation.
 
-<https://gist.github.com/ghaiklor/08863a0db452379ae90d>
+{% gist 08863a0db452379ae90d %}
 
 _CreateEnvironment_ method accepts _libuv_ event loop as a _loop_ argument.
 We can call _Environment::New_ from V8 namespace and send there _libuv_ event loop and then configure it in V8 Environment.
