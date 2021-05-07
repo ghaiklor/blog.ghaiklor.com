@@ -28,7 +28,7 @@ This way, it should be easier for you to understand what’s going on under the 
 
 The code found in this post is taken from existing Node.js sources, so after reading this article, you should be more comfortable with Node.js.
 
-## What do we need this for?
+## What do we need this for
 
 The first question that may come to your mind — **“What do we need this for?”**.
 
@@ -160,12 +160,12 @@ That’s all.
 
 Finally, **we can create simple Node.js**, combining all the techniques described above :)
 
-## C++ -> V8 Templates -> Run JavaScript -> ?
+## C++ -> V8 Templates -> Run JavaScript -> X
 
 You can create VM instance (_also known as Isolate in V8_) -> create as much _FunctionTemplate_ instances, with assigned C++ callbacks, as you want -> create _ObjectTemplate_ instance and assign all created _FunctionTemplate_ instances to it -> create JavaScript context with a global object as our _ObjectTemplate_ instance -> run JavaScript in this context and Voila -> Node.js.
 Sweet!
 
-But what is the question mark after “_Run JavaScript_” in chapter’s title?
+But what is the "X" after “_Run JavaScript_” in chapter’s title?
 **There is a little problem with implementation above**.
 We missed one very important thing.
 
@@ -346,7 +346,7 @@ Great, now we know how to require native modules or modules from your working di
 
 Finally, we can write a simple JavaScript module that will run each time we run Node.js and prepare the Node.js environment using all the stuff above.
 
-## Node.js Runtime Library?
+## Node.js Runtime Library
 
 What is a runtime library?
 It’s a library that prepares the environment, setting global variables _process_, _console_, _Buffer_, etc, and runs the main script you send to Node.js CLI as an argument.
@@ -403,6 +403,6 @@ Thanks to everyone who has read this post to the end.
 I hope you enjoyed it and learned something new.
 If you found any issues or something, comment and I’ll reply as soon as possible.
 
-* * *
+---
 
 _Eugene Obrezkov, Technical Leader at Onix-Systems, Kirovohrad, Ukraine._
