@@ -26,7 +26,7 @@ _TL;DR_ If you are not interested in reading the post and want to see the result
 Otherwise, let’s dive into terminology before reading.
 I want to be sure you understand terms and what I’m talking about.
 
-## What is REST API?
+## What is REST API
 
 Let’s look at Wikipedia:
 
@@ -40,7 +40,7 @@ As Wikipedia said above, _“REST is the software architectural style”_.
 It’s not a library you can install and work with.
 It’s just a bundle of rules you need to follow when writing your web service.
 
-## What do we used to develop a web service?
+## What do we used to develop a web service
 
 It shouldn’t come as a surprise if I said that it’s hard to build a web service without frameworks or libraries that implement an abstract layer on top of HTTP protocol.
 If you don’t want to use libraries, handle all the low-level stuff yourself, which is boring…
@@ -52,7 +52,7 @@ You could say: “What the hell? Express is a framework!”
 
 They are just extensible libraries, but the framework is a much wider term.
 
-## What is the framework?
+## What is the framework
 
 If you googled the definition of framework, you could find:
 
@@ -113,7 +113,7 @@ _actionHero_ seemed promising, but I wanted to choose something more comfortable
 That’s why I had chose _Sails_ which is built on _Express_.
 _Sails_ provides Rails-like architecture, it’s easier to work with it if you worked with Rails before.
 
-## Why Sails?
+## Why Sails
 
 Let’s dive deeper into Sails and answer a simple question “Why Sails?”
 
@@ -245,6 +245,6 @@ Congratulations, you just have set up Sails project optimized for REST rules.
 If you want to read more about sub-generators and what they can generate, follow the [link](https://github.com/ghaiklor/generator-sails-rest-api/wiki/Sub-Generators) to our wiki.
 I’m really excited to share our knowledge and experience in Sails with you in [generator-sails-rest-api](https://github.com/ghaiklor/generator-sails-rest-api).
 
-* * *
+---
 
 _Eugene Obrezkov, Technical Leader and Consultant at Onix-Systems, Kirovohrad, Ukraine._
