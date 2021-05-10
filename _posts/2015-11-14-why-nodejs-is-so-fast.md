@@ -95,7 +95,7 @@ Your callback also can do other intensive operations like querying the database,
 But what about code execution and its speed?
 Next, we will talk about a virtual machine that executes JavaScript code — V8.
 
-## How V8 optimise your code?
+## How V8 optimise your code
 
 Thanks to [Wingolog](https://wingolog.org/tags/v8), where it is described how V8 works, I can simplify that material and make a thesis.
 
