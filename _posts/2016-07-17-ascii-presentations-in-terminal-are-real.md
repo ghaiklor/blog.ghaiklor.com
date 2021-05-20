@@ -80,10 +80,6 @@ It’s just a simple YAML file you can declare and then use CLI tool for running
 kittik start my-presentation.yml
 ```
 
-I’ve written a [little guide](https://github.com/kittikjs/kittik/blob/dev/doc/guides/how-to-create-a-presentation.md) where I’m describing the process in more detail.
-If you are interested in this project, you definitely need to read it through.
-When you done, you’ll be more comfortable understanding Kittik and how to create a presentation for your next talk.
-
 ## Any help
 
 For now, I’m done with a stable version of all Kittik sub-modules and its core.
