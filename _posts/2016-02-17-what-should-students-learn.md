@@ -100,7 +100,7 @@ Also, it is complicated because users now use different browsers, operating syst
 
 There are several tools to help you produce HTML, CSS, and JavaScript.
 
-- HTML: [Handlebars](http://handlebarsjs.com), [Jade](http://jade-lang.com), [Mustache](http://mustache.github.io) and many others, just google “template engine” and find which you like more;
+- HTML: [Handlebars](http://handlebarsjs.com), [Jade](https://jade-lang.com), [Mustache](http://mustache.github.io) and many others, just google “template engine” and find which you like more;
 - CSS: [PostCSS](http://postcss.org), [SASS](http://sass-lang.com), [LESS](http://lesscss.org) which extend the CSS language, adding new features that simplify writing CSS. You can use CSS frameworks, like [Bootstrap](http://getbootstrap.com) or [Foundation](http://foundation.zurb.com).
 - JavaScript: [TypeScript](http://www.typescriptlang.org) is a subset of JavaScript that compiles to plain JavaScript. [Babel](https://babeljs.io) allows you to use the next generation JavaScript which compiles to plain JavaScript guarantee work on older browsers. Frameworks you can use at the moment: [React](https://facebook.github.io/react/), [Angular](https://angularjs.org).
 
@@ -135,7 +135,7 @@ As in case with iOS Development, Android Development needs specific toolsets to 
 Simpler part here is that you need not buy high-priced devices to code for Android.
 You can have any Android device and any operating system (Linux, Mac OS X, Windows).
 
-Write code in any IDE or text editor you want, but it’s simpler to start with IDE that was made for Android Development — [Android Studio](http://developer.android.com/sdk/).
+Write code in any IDE or text editor you want, but it’s simpler to start with IDE that was made for Android Development — [Android Studio](https://developer.android.com/studio).
 In case of using this IDE, it installs all the dependencies and configure everything that’s needed to code applications right away.
 
 [Java](https://en.wikipedia.org/wiki/Java_%28programming_language%29) and [Kotlin](https://kotlinlang.org) are programming languages you can use to write the Android applications.
