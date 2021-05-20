@@ -100,7 +100,7 @@ Also, it is complicated because users now use different browsers, operating syst
 
 There are several tools to help you produce HTML, CSS, and JavaScript.
 
-- HTML: [Handlebars](http://handlebarsjs.com), [Jade](https://jade-lang.com), [Mustache](http://mustache.github.io) and many others, just google “template engine” and find which you like more;
+- HTML: [Handlebars](http://handlebarsjs.com), [Jade](https://github.com/dscape/jade), [Mustache](http://mustache.github.io) and many others, just google “template engine” and find which you like more;
 - CSS: [PostCSS](http://postcss.org), [SASS](http://sass-lang.com), [LESS](http://lesscss.org) which extend the CSS language, adding new features that simplify writing CSS. You can use CSS frameworks, like [Bootstrap](http://getbootstrap.com) or [Foundation](http://foundation.zurb.com).
 - JavaScript: [TypeScript](http://www.typescriptlang.org) is a subset of JavaScript that compiles to plain JavaScript. [Babel](https://babeljs.io) allows you to use the next generation JavaScript which compiles to plain JavaScript guarantee work on older browsers. Frameworks you can use at the moment: [React](https://facebook.github.io/react/), [Angular](https://angularjs.org).
 
@@ -135,7 +135,7 @@ As in case with iOS Development, Android Development needs specific toolsets to 
 Simpler part here is that you need not buy high-priced devices to code for Android.
 You can have any Android device and any operating system (Linux, Mac OS X, Windows).
 
-Write code in any IDE or text editor you want, but it’s simpler to start with IDE that was made for Android Development — [Android Studio](https://developer.android.com/studio).
+Write code in any IDE or text editor you want, but it’s simpler to start with IDE that was made for Android Development — [Android Studio](https://en.wikipedia.org/wiki/Android_Studio).
 In case of using this IDE, it installs all the dependencies and configure everything that’s needed to code applications right away.
 
 [Java](https://en.wikipedia.org/wiki/Java_%28programming_language%29) and [Kotlin](https://kotlinlang.org) are programming languages you can use to write the Android applications.
@@ -157,7 +157,7 @@ But I can try to give you some basic things you need to know.
 [Assembler](https://en.wikipedia.org/wiki/Assembly_language) and [C](https://en.wikipedia.org/wiki/C_%28programming_language%29) are languages used in system programming and embedded programming.
 You need to know them if you want to go into embedded programming.
 
-You can buy micro-controllers like [Tessel](https://tessel.io) or [Espruino](http://www.espruino.com) for your first projects.
+You can buy micro-controllers like [Tessel](https://learn.sparkfun.com/tutorials/getting-started-with-the-tessel-2/all) or [Espruino](http://www.espruino.com) for your first projects.
 They support Node.js as a main language, so you can try to make something with Node.js and then go further to Assembler and C.
 
 ## Epilogue
