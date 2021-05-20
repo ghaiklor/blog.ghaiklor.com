@@ -19,7 +19,7 @@ header:
   teaser: assets/uploads/2016-03-25/v8.jpg
 ---
 
-In my [previous article](./2015-11-14-why-nodejs-is-so-fast.md), I was talking about Node.js and why it’s fast.
+In my [previous article]({% post_url 2015-11-14-why-nodejs-is-so-fast %}), I was talking about Node.js and why it’s fast.
 Today, I want to talk about V8.
 
 I suppose some of you heard that JavaScript executes as fast as C++.
