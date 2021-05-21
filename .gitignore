@@ -73,3 +73,6 @@ Gemfile.lock
 # Ignore all local history of files
 .history
 .ionide
+
+# Twitter Cache
+.tweet-cache
