@@ -222,4 +222,4 @@ If you want to investigate further, check the [sources of my simple OS](https://
 
 ---
 
-*Eugene Obrezkov, Senior Software Engineer at [elastic.io](http://elastic.io), Kyiv, Ukraine*
+*Eugene Obrezkov, Senior Software Engineer at [elastic.io](http://elastic.io), Kyiv, Ukraine.*
