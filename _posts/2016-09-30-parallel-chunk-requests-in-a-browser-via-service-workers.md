@@ -39,7 +39,7 @@ But, what if **we could load one resource in a few separate requests at once, im
 
 It all began with this tweet:
 
-{% twitter 'https://twitter.com/ghaiklor/status/762256070299574272' %}
+{% include figure image_path="assets/uploads/2016-09-30/tweet-1.png" alt="Tweet" caption="https://twitter.com/ghaiklor/status/762256070299574272" %}
 
 I was trying to intercept these resource requests, after a while, I realized that I can only do this in the same origin, so I switched to video files, located under the same origin.
 
@@ -124,7 +124,7 @@ We have all we need; the last thing is combining responses.
 
 After some research, I came up with a solution, where we can use responses as an **_ArrayBuffer_**.
 
-{% twitter 'https://twitter.com/ghaiklor/status/762342437851389952' %}
+{% include figure image_path="assets/uploads/2016-09-30/tweet-2.png" alt="Tweet" caption="https://twitter.com/ghaiklor/status/762342437851389952" %}
 
 We have responses to all chunks of a file.
 We know how to combine them into one.
@@ -160,7 +160,7 @@ self.addEventListener('fetch', onFetch);
 
 And… we’re done here.
 
-{% twitter 'https://twitter.com/ghaiklor/status/765588363839737856' %}
+{% include figure image_path="assets/uploads/2016-09-30/tweet-3.png" alt="Tweet" caption="https://twitter.com/ghaiklor/status/765588363839737856" %}
 
 Notice how only one file is being downloaded, but in separate requests.
 
