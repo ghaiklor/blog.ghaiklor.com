@@ -46,7 +46,7 @@ description: Personal technical blog of some guy from Kyiv, Ukraine. I write, mo
 locale: en
 logo: assets/images/logo/masthead-logo.png
 masthead_title: Eugene Obrezkov
-minimal_mistakes_skin: dirt
+minimal_mistakes_skin: default
 name: Eugene Obrezkov
 remote_theme: mmistakes/minimal-mistakes
 repository: ghaiklor/blog.ghaiklor.com
