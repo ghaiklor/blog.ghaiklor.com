@@ -24,7 +24,7 @@ header:
 Recently, I have published an article where I describe a few tricks about how to migrate your project from multi-repository to mono-repository.
 Some of you really appreciated the topic:
 
-{% twitter 'https://twitter.com/froderik/status/1023810738660548609' %}
+{% include figure image_path="assets/uploads/2018-08-05/tweet-1.png" alt="Tweet" caption="https://twitter.com/froderik/status/1023810738660548609" %}
 
 However, some of you wanted more details about the build process itself.
 So, I have written about that in depth.
