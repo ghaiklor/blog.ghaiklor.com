@@ -18,7 +18,6 @@ plugins:
   - jekyll-remote-theme
   - jekyll-seo-tag
   - jekyll-sitemap
-  - jekyll-twitter-plugin
 
 # Default Settings
 defaults:
