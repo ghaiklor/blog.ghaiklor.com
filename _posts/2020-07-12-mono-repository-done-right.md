@@ -182,7 +182,7 @@ That way, VSCode knows more and doesn’t make assumptions about what to resolve
 Imagine what is going on under the hood in VSCode when it tries to resolve dependencies, evaluate types and so on and so forth for the entire repository, thinking it is all a single project.
 Help him and split your sub projects in separate folders in the workspace.
 
-## Was it worth it?
+## Was it worth it
 
 I mean… I used Lerna and npm before and have no issues, but not because there were no issues, but because I did not know about them.
 **Was it worth it to migrate to Rush and pnpm? Totally, yes!**
