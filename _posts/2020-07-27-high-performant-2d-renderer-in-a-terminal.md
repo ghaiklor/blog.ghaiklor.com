@@ -83,7 +83,7 @@ First, we start with a magic number that terminal knows about and if it sees it,
 The magic number is - **_1B_** (_HEX_).
 
 Afterwards, we add the control code itself and write it to the standard output.
-The control codes are all defined in a table that you can look up on the Internet, like [this one](http://ascii-table.com/ansi-escape-sequences-vt-100.php).
+The control codes are all defined in a table that you can look up on the Internet, like [this one](https://gist.github.com/fnky/458719343aabd01cfb17a3a4f7296797).
 
 So... moving the cursor.
 According to the table, we need to write `<ESC>[<LINE>;<COLUMN>H`.
