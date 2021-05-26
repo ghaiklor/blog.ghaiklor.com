@@ -42,7 +42,10 @@ defaults:
       classes: wide
 
 # Site Settings
-description: Personal technical blog of some guy from Kyiv, Ukraine. I write, mostly, about Node.js, TypeScript and Developer Experience.
+description: >-
+  Personal technical blog of some guy from Kyiv, Ukraine. I write, mostly, about
+  Node.js and TypeScript but sometimes go deeper into bare metal, compilers,
+  operating systems and the likes.
 locale: en
 logo: assets/images/logo/masthead-logo.png
 masthead_title: Eugene Obrezkov
