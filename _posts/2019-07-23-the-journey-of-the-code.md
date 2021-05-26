@@ -17,7 +17,7 @@ tags:
 header:
   overlay_image: assets/uploads/2019-07-23/journey.jpg
   overlay_filter: 0.5
-  caption: https://wallpapercave.com/w/wp4032430
+  caption: wallpapercave.com/w/wp4032430
   teaser: assets/uploads/2019-07-23/journey.jpg
 ---
 
