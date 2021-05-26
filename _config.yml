@@ -27,19 +27,19 @@ defaults:
     values:
       layout: single
       author_profile: true
+      classes: wide
       comments: true
       read_time: true
       related: true
       share: true
       show_date: true
-      toc_sticky: true
-      toc: true
   - scope:
       path: ''
       type: pages
     values:
       layout: single
       author_profile: true
+      classes: wide
 
 # Site Settings
 description: Personal technical blog of some guy from Kyiv, Ukraine. I write, mostly, about Node.js, TypeScript and Developer Experience.
