@@ -1,6 +1,6 @@
 ---
-title: About
 permalink: /about/
+title: About
 ---
 
 My name is Eugene Obrezkov, you may also know me as “ghaiklor” on the Internet.
