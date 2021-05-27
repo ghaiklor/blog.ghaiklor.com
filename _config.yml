@@ -3,7 +3,7 @@ encoding: utf-8
 include: ['_pages']
 paginate_path: '/page:num/'
 paginate: 8
-permalink: '/:year/:month/:day/:title'
+permalink: '/:categories/:title/'
 strict_front_matter: true
 timezone: Europe/Kiev
 
