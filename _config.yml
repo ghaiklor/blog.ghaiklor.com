@@ -2,7 +2,7 @@
 encoding: utf-8
 include: ['_pages']
 paginate_path: '/page-:num/'
-paginate: 5
+paginate: 8
 permalink: '/:year/:month/:day/:title'
 strict_front_matter: true
 timezone: Europe/Kiev
