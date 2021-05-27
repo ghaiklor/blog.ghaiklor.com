@@ -128,11 +128,3 @@ footer:
     - label: Instagram
       icon: fab fa-fw fa-instagram
       url: 'https://instagram.com/ghaiklor'
-
-# Archive Settings
-category_archive:
-  type: liquid
-  path: /categories/
-tag_archive:
-  type: liquid
-  path: /tags/
