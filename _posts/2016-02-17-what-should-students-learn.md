@@ -82,7 +82,7 @@ This is where backend comes in.
 The backend of a website comprises a server, an application, and a database.
 A backend developer builds and maintains the technology that powers those components which, together, enable creating the user-facing side of the website to even exist.
 
-To make the server (application), backend developers use server-side languages like [Ruby](https://www.ruby-lang.org/), [Python](https://www.python.org), [Java](https://www.java.com/en/), [Node.js](https://nodejs.org/).
+To make the server (application), backend developers use server-side languages like [Ruby](https://www.ruby-lang.org/), [Python](https://www.python.org), [Java](https://en.wikipedia.org/wiki/Java_(programming_language)), [Node.js](https://nodejs.org/).
 When you need to store some information, databases come in handy.
 [MySQL](https://www.mysql.com), [PostgreSQL](https://www.postgresql.org), [MongoDB](https://www.mongodb.org), [Neo4j](https://neo4j.com) are used to find, save, or change data and serve it back to your application.
 
