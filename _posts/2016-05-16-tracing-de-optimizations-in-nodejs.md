@@ -104,7 +104,7 @@ When we removed it — functions became optimized.
 
 That was a simple example, but it becomes difficult to find de-optimizations in big projects, when you have a lot of code and running node with these flags will spam your console with a lot of information, so difficult to find what you are looking for.
 
-Luckily, thanks to [Vyacheslav Egorov](https://medium.com/u/c9127427a2cf), we have [IRHydra](http://mrale.ph/irhydra/2/).
+Luckily, thanks to [Vyacheslav Egorov](https://medium.com/u/c9127427a2cf), we have [IRHydra](https://mrale.ph/irhydra/2/).
 
 ## IRHydra
 

@@ -89,4 +89,4 @@ Thanks for reading!
 
 ---
 
-*Eugene Obrezkov, Senior JavaScript developer at [Dev-Pro](http://www.dev-pro.net), Kharkov, Ukraine.*
+*Eugene Obrezkov, Senior JavaScript developer at [Dev-Pro](https://www.dev-pro.net), Kharkov, Ukraine.*

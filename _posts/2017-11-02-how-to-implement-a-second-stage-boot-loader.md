@@ -86,7 +86,7 @@ I hope these steps are clear enough, and we can start with implementing those.
 
 Our first step is to have an ability to read some data from drive and load it into the memory.
 BIOS has the required interruption, so we can use it for reading specified offset from the drive.
-Its interruption code is [INT 13,2 — Read Disk Sectors](http://stanislavs.org/helppc/int_13-2.html).
+Its interruption code is [INT 13,2 — Read Disk Sectors](https://stanislavs.org/helppc/int_13-2.html).
 
 We can implement the whole procedure in the following way:
 
@@ -222,4 +222,4 @@ If you want to investigate further, check the [sources of my simple OS](https://
 
 ---
 
-*Eugene Obrezkov, Senior Software Engineer at [elastic.io](http://elastic.io), Kyiv, Ukraine.*
+*Eugene Obrezkov, Senior Software Engineer at [elastic.io](https://elastic.io), Kyiv, Ukraine.*

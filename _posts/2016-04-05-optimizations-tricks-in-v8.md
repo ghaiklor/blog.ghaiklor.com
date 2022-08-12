@@ -151,7 +151,7 @@ Let’s finish this article with a short list of minor optimizations applied to 
 ## Useful links
 
 - [V8 Design Elements](https://developers.google.com/v8/design)
-- [A tour of V8: Crankshaft, the optimizing compiler](http://jayconrod.com/posts/54/a-tour-of-v8-crankshaft-the-optimizing-compiler)
+- [A tour of V8: Crankshaft, the optimizing compiler](https://jayconrod.com/posts/54/a-tour-of-v8-crankshaft-the-optimizing-compiler)
 - [A closer look at Crankshaft V8 optimizing compiler](https://wingolog.org/archives/2011/08/02/a-closer-look-at-crankshaft-v8s-optimizing-compiler)
 - [Optimization killers](https://github.com/petkaantonov/bluebird/wiki/Optimization-killers)
 - [V8 bailout reasons](https://github.com/vhf/v8-bailout-reasons)

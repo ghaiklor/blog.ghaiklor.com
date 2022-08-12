@@ -26,7 +26,7 @@ After the speech, I’ve written an article, hoping someone else can find this u
 Here, I will explain the basic things you need to know to get a job.
 I will give you a direction, then you will have to learn on your own.
 
-I make a living as a Developer Advocate at [Onix-Systems](http://onix-systems.com) and have over five years of experience in the commercial sector.
+I make a living as a Developer Advocate at [Onix-Systems](https://onix-systems.com) and have over five years of experience in the commercial sector.
 Developer Advocate acting as a steward of open-source projects that the company starts or sponsors, including performing code reviews, contributing code to the project, and helping drive the direction of that project.
 Writing public, open-source libraries to wrap APIs for the company’s products and helping to integrate those into existing open source projects that might make use.
 
@@ -84,7 +84,7 @@ A backend developer builds and maintains the technology that powers those compon
 
 To make the server (application), backend developers use server-side languages like [Ruby](https://www.ruby-lang.org/), [Python](https://www.python.org), [Java](https://www.java.com/), [Node.js](https://nodejs.org/).
 When you need to store some information, databases come in handy.
-[MySQL](https://www.mysql.com), [PostgreSQL](http://www.postgresql.org), [MongoDB](https://www.mongodb.org), [Neo4j](http://neo4j.com) are used to find, save, or change data and serve it back to your application.
+[MySQL](https://www.mysql.com), [PostgreSQL](https://www.postgresql.org), [MongoDB](https://www.mongodb.org), [Neo4j](https://neo4j.com) are used to find, save, or change data and serve it back to your application.
 
 Backend applications have become a standard way of trading data between mobile devices, websites, and other systems that are connected to your backend application.
 
@@ -100,13 +100,13 @@ Also, it is complicated because users now use different browsers, operating syst
 
 There are several tools to help you produce HTML, CSS, and JavaScript.
 
-- HTML: [Handlebars](http://handlebarsjs.com), [Jade](https://github.com/dscape/jade), [Mustache](http://mustache.github.io) and many others, just google “template engine” and find which you like more;
-- CSS: [PostCSS](http://postcss.org), [SASS](http://sass-lang.com), [LESS](http://lesscss.org) which extend the CSS language, adding new features that simplify writing CSS. You can use CSS frameworks, like [Bootstrap](http://getbootstrap.com) or [Foundation](http://foundation.zurb.com).
-- JavaScript: [TypeScript](http://www.typescriptlang.org) is a subset of JavaScript that compiles to plain JavaScript. [Babel](https://babeljs.io) allows you to use the next generation JavaScript which compiles to plain JavaScript guarantee work on older browsers. Frameworks you can use at the moment: [React](https://facebook.github.io/react/), [Angular](https://angularjs.org).
+- HTML: [Handlebars](https://handlebarsjs.com), [Jade](https://github.com/dscape/jade), [Mustache](https://mustache.github.io) and many others, just google “template engine” and find which you like more;
+- CSS: [PostCSS](https://postcss.org), [SASS](https://sass-lang.com), [LESS](https://lesscss.org) which extend the CSS language, adding new features that simplify writing CSS. You can use CSS frameworks, like [Bootstrap](https://getbootstrap.com) or [Foundation](https://foundation.zurb.com).
+- JavaScript: [TypeScript](https://www.typescriptlang.org) is a subset of JavaScript that compiles to plain JavaScript. [Babel](https://babeljs.io) allows you to use the next generation JavaScript which compiles to plain JavaScript guarantee work on older browsers. Frameworks you can use at the moment: [React](https://facebook.github.io/react/), [Angular](https://angularjs.org).
 
 When you have all the tools that do it, you will also need to know module bundlers.
 Module bundlers build the distribution from your source code, ready to deploy.
-Here are some of the most popular bundlers: [WebPack](http://webpack.github.io/), [Browserify](http://browserify.org), [RollUp](http://rollupjs.org).
+Here are some of the most popular bundlers: [WebPack](https://webpack.github.io/), [Browserify](https://browserify.org), [RollUp](https://rollupjs.org).
 
 It’s a hard direction because it changes constantly, but if you like to build things that other people can see and interact with it, then your choice is **frontend development**.
 
@@ -115,7 +115,7 @@ It’s a hard direction because it changes constantly, but if you like to build 
 There are many challenges but not in the learning curve or something like that.
 The reason is simple.
 If you want to write applications for iOS, you need to buy iPhone, iMac or MacBook, which costs a lot of money.
-You have a solution if you don’t have them — [hackintosh](http://www.hackintosh.com), but remember, there is no way you can do it legally on other platforms.
+You have a solution if you don’t have them — [hackintosh](https://www.hackintosh.com), but remember, there is no way you can do it legally on other platforms.
 
 The next step is to install [Xcode](https://developer.apple.com/xcode/).
 Xcode is an integrated development environment (IDE) containing a suite of software development tools developed by Apple for developing software for OS X and iOS.
@@ -157,7 +157,7 @@ But I can try to give you some basic things you need to know.
 [Assembler](https://en.wikipedia.org/wiki/Assembly_language) and [C](https://en.wikipedia.org/wiki/C_%28programming_language%29) are languages used in system programming and embedded programming.
 You need to know them if you want to go into embedded programming.
 
-You can buy micro-controllers like [Tessel](https://learn.sparkfun.com/tutorials/getting-started-with-the-tessel-2/all) or [Espruino](http://www.espruino.com) for your first projects.
+You can buy micro-controllers like [Tessel](https://learn.sparkfun.com/tutorials/getting-started-with-the-tessel-2/all) or [Espruino](https://www.espruino.com) for your first projects.
 They support Node.js as a main language, so you can try to make something with Node.js and then go further to Assembler and C.
 
 ## Epilogue
@@ -170,4 +170,4 @@ Thanks [Konstantin Batura](https://medium.com/u/9f08a06ac553) for helping me edi
 
 ---
 
-_Eugene Obrezkov, Developer Advocate at_ [_Onix-Systems_](http://onix-systems.com)_, Kirovohrad, Ukraine._
+_Eugene Obrezkov, Developer Advocate at_ [_Onix-Systems_](https://onix-systems.com)_, Kirovohrad, Ukraine._

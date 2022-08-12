@@ -30,7 +30,7 @@ It is loaded into operating memory from persistent memory, such as a hard drive 
 
 **Bare-metal** stands for [bare-metal programming](https://www.quora.com/What-is-bare-metal-programming-in-Embedded-systems).
 We will not use any layers of abstraction such as GRUB loader or C language or operating system _(we don’t have it at this step)_.
-We will use Assembly language and [nasm compiler](http://www.nasm.us) and that’s it.
+We will use Assembly language and [nasm compiler](https://www.nasm.us) and that’s it.
 We will interact with a system at the hardware level.
 
 However, we apply simplifications here and implement a simple “Hello, World!” printing.
@@ -83,7 +83,7 @@ Let’s write some code!
 I don’t want to burden you, but before writing some code you surely must have an environment for this.
 I use MacOS, so the instructions below are for MacOS.
 
-You need to have [an Assembly compiler — nasm](http://www.nasm.us) and an emulator for testing our boot loader — [QEMU](http://qemu.org).
+You need to have [an Assembly compiler — nasm](https://www.nasm.us) and an emulator for testing our boot loader — [QEMU](https://qemu.org).
 We can install these via brew:
 
 ```shell
@@ -168,4 +168,4 @@ In case, you are interested in sources of my simple operating system, you can fi
 
 ---
 
-*Eugene Obrezkov, Senior Software Engineer at [elastic.io](http://elastic.io), Kyiv, Ukraine.*
+*Eugene Obrezkov, Senior Software Engineer at [elastic.io](https://elastic.io), Kyiv, Ukraine.*

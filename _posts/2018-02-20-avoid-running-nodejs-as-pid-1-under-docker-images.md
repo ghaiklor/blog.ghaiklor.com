@@ -37,7 +37,7 @@ I’ll describe a real case.
 
 ## Where does this occur
 
-At my work ([elastic.io](http://elastic.io)), we are using Mesosphere and Kubernetes as our orchestrators.
+At my work ([elastic.io](https://elastic.io)), we are using Mesosphere and Kubernetes as our orchestrators.
 When Mesos or Kubernetes kills the task, the following is happening:
 
 - Mesos sends SIGTERM and waits for process to die for some time
@@ -103,7 +103,7 @@ For instance, when Java exits by a SIGTERM signal, it will return exit code 143,
 > When reporting the exit status with the special parameter ‘?’, the shell shall report the full eight bits of exit status available.
 > The exit status of a command that terminated because it received a signal shall be reported as greater than 128.
 >
-> ([*reference*](http://pubs.opengroup.org/onlinepubs/009695399/utilities/xcu_chap02.html#tag_02_08_02))
+> ([*reference*](https://pubs.opengroup.org/onlinepubs/009695399/utilities/xcu_chap02.html#tag_02_08_02))
 
 Docker init cannot handle such cases.
 That’s how we found our ideal solution to these cases — Tini.
@@ -138,4 +138,4 @@ I hope the article helps you to find some unexpected behavior in your applicatio
 
 ---
 
-*Eugene Obrezkov, Senior Software Engineer at [elastic.io](http://elastic.io), Kyiv, Ukraine.*
+*Eugene Obrezkov, Senior Software Engineer at [elastic.io](https://elastic.io), Kyiv, Ukraine.*

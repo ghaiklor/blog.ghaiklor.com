@@ -101,12 +101,12 @@ BTW, regard to proofreading, I am using the tool called [ProWritingAid](https://
 It has checks for styling, grammar, [Flesch–Kincaid readability tests](https://en.wikipedia.org/wiki/Flesch%E2%80%93Kincaid_readability_tests) and a lot more.
 I'd even say it worth describing the tool more in depth in another post.
 
-Alternatives to help you with writing posts are [Hemingway App](http://www.hemingwayapp.com/) or [Grammarly](https://grammarly.com/).
+Alternatives to help you with writing posts are [Hemingway App](https://www.hemingwayapp.com/) or [Grammarly](https://grammarly.com/).
 
 Though we are already getting off the tracks, let us return to the migration.
 We have posts on WordPress.com.
-In my case, they are available at [ghaiklor.wordpress.com](http://ghaiklor.wordpress.com).
-And let us say we can just take our custom domain [blog.ghaiklor.com](http://blog.ghaiklor.com) and switch it to the WordPress.com.
+In my case, they are available at [ghaiklor.wordpress.com](https://ghaiklor.wordpress.com).
+And let us say we can just take our custom domain [blog.ghaiklor.com](https://blog.ghaiklor.com) and switch it to the WordPress.com.
 Not so fast...
 
 ## Backward Compatibility

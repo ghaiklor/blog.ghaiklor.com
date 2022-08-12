@@ -19,7 +19,7 @@ header:
 ---
 
 Happy New Year!
-I’ve finished [Advent of Code](http://adventofcode.com) and want to share my solutions with you.
+I’ve finished [Advent of Code](https://adventofcode.com) and want to share my solutions with you.
 Of course, some solutions can be improved; I don’t claim these to be the best solutions possible.
 
 When I started playing this game, I decided to write one paragraph with a solution and explanation to it.
@@ -797,4 +797,4 @@ It was a new experience for me in solving these problems and I highly recommend 
 
 Thanks [Konstantin Batura](https://medium.com/u/9f08a06ac553) for helping me write this article.
 
-*Eugene Obrezkov, Developer Advocate at [Onix-Systems](http://onix-systems.com), Kirovohrad, Ukraine.*
+*Eugene Obrezkov, Developer Advocate at [Onix-Systems](https://onix-systems.com), Kirovohrad, Ukraine.*

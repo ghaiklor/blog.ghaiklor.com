@@ -45,7 +45,7 @@ It’s just a bundle of rules you need to follow when writing your web service.
 It shouldn’t come as a surprise if I said that it’s hard to build a web service without frameworks or libraries that implement an abstract layer on top of HTTP protocol.
 If you don’t want to use libraries, handle all the low-level stuff yourself, which is boring…
 
-That’s why many people are using [Express](http://expressjs.com), [Koa](http://koajs.com) or [Hapi](http://hapijs.com) to develop web services, but don’t consider using frameworks.
+That’s why many people are using [Express](https://expressjs.com), [Koa](https://koajs.com) or [Hapi](https://hapijs.com) to develop web services, but don’t consider using frameworks.
 You could say: “What the hell? Express is a framework!”
 
 **I’m brave enough to say that Express, Koa and Hapi are not frameworks!**
@@ -67,7 +67,7 @@ You have to include another module that implements it.
 
 If you’re still not convinced about this definition or think it’s too broad, lets clarify it with few more quotes.
 
-According to Wolfgang Pree and his paper “[Meta Patterns: A Means for Capturing the Essentials of Reusable Object-Oriented Design](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.92.1202&rep=rep1&type=pdf)”:
+According to Wolfgang Pree and his paper “[Meta Patterns: A Means for Capturing the Essentials of Reusable Object-Oriented Design](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.92.1202&rep=rep1&type=pdf)”:
 
 > Frameworks comprise frozen spots and hot spots. Frozen spots define the overall architecture of a software system, that is to say its basic components and the relationships between them. These remain unchanged (frozen) in any instantiation of the application framework. Hot spots represent those parts where the programmers using the framework add their own code to add the functionality specific to their own project.
 
@@ -96,13 +96,13 @@ I prefer using frameworks over libraries.
 Frameworks simplify our life a lot, do they not?
 
 There are a lot of frameworks for Node.js.
-You can find most of them [here](http://nodeframework.com) and chose one you like the most.
+You can find most of them [here](https://nodeframework.com) and chose one you like the most.
 But, for now, I want to focus your attention on these:
 
-- [Sails](http://sailsjs.org)
-- [Strapi](http://strapi.io)
-- [Loopback](http://loopback.io)
-- [actionHero](http://www.actionherojs.com)
+- [Sails](https://sailsjs.org)
+- [Strapi](https://strapi.io)
+- [Loopback](https://loopback.io)
+- [actionHero](https://www.actionherojs.com)
 
 Each of them simplifies web service development based on REST principles.
 
@@ -152,7 +152,7 @@ I remember when I got another project at work that should have been built on Nod
 
 I realized that this will not be my last REST API project, so I thought on how to mitigate all these issues in future projects without wasting my time again.
 
-That’s how I found [Yeoman](http://yeoman.io).
+That’s how I found [Yeoman](https://yeoman.io).
 
 > Yeoman helps you to kickstart new projects, prescribing best practices and tools to help you stay productive. To do so, we provide a generator ecosystem. A generator is a plugin that can be run with the `yo` command to scaffold complete projects or useful parts.
 

@@ -100,7 +100,7 @@ Next, we will talk about a virtual machine that executes JavaScript code — V8.
 Thanks to [Wingolog](https://wingolog.org/tags/v8), where it is described how V8 works, I can simplify that material and make a thesis.
 
 I will talk about basic concepts of V8 and how it optimise JavaScript code, but it will still be technical, so fell free to skip this chapter if you are not familiar with how compilers work.
-If you want to know more about V8, go to [V8 Resources](http://mrale.ph/v8/resources.html).
+If you want to know more about V8, go to [V8 Resources](https://mrale.ph/v8/resources.html).
 
 V8 has two types of compilers (_There is also a third compiler in development which is called Turbofan_): “Full” compiler and “Crankshaft” compiler.
 
@@ -127,9 +127,9 @@ Only then this optimized code replace the old un-optimized code and continue exe
 
 ## Useful links
 
-- [Crazy Russian compiler engineer that talks](http://mrale.ph)
+- [Crazy Russian compiler engineer that talks](https://mrale.ph)
 - [Andy Wingo’s Blog](https://wingolog.org/tags/v8)
-- [V8 Resources](http://mrale.ph/v8/resources.html)
+- [V8 Resources](https://mrale.ph/v8/resources.html)
 
 ---
 
