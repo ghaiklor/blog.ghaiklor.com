@@ -72,8 +72,8 @@ When writing your own TypeScript configuration base, you need to reference the [
 In case you are too lazy to do so, I'll highlight important configuration values that solve some problems:
 
 - When debugging the TypeScript code base, it is great to have these flags set to true - _[declaration](https://www.typescriptlang.org/tsconfig#declaration)_, _[declarationMap](https://www.typescriptlang.org/tsconfig#declarationMap)_ and [_sourceMap_](https://www.typescriptlang.org/tsconfig#sourceMap).
-- You can enable the entire family of strict checks by using the single toggle - [_strict_](https://www.typescriptlang.org/tsconfig#strict). Or, if you want to selectively enable only what you are interested in, refer to [TypeScript strict options](https://www.typescriptlang.org/tsconfig#Strict_Type_Checking_Options_6173).
-- Additional checks like [_noImplicitAny_](https://www.typescriptlang.org/tsconfig#noImplicitAny), [_noImplicitThis_](https://www.typescriptlang.org/tsconfig#noImplicitThis) and [others](https://www.typescriptlang.org/tsconfig#Additional_Checks_6176) help to prevent a lot of implicit behavior and I highly recommend enabling them all.
+- You can enable the entire family of strict checks by using the single toggle - [_strict_](https://www.typescriptlang.org/tsconfig#strict). Or, if you want to selectively enable only what you are interested in, refer to [TypeScript strict options](https://www.typescriptlang.org/tsconfig).
+- Additional checks like [_noImplicitAny_](https://www.typescriptlang.org/tsconfig#noImplicitAny), [_noImplicitThis_](https://www.typescriptlang.org/tsconfig#noImplicitThis) and [others](https://www.typescriptlang.org/tsconfig) help to prevent a lot of implicit behavior and I highly recommend enabling them all.
 
 When you are done crafting your own configuration base, following the reference, enabling all the strict checks, turning off implicit behaviors and so on, you can prepare it as a separate package.
 
@@ -179,4 +179,4 @@ Thanks for your time!
 
 ---
 
-*Eugene Obrezkov, Software Engineer at Wix.com, Kyiv, Ukraine.*
+_Eugene Obrezkov, Software Engineer at Wix.com, Kyiv, Ukraine._

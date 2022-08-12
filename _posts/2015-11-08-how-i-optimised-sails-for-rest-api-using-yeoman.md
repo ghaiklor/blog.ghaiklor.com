@@ -96,7 +96,7 @@ I prefer using frameworks over libraries.
 Frameworks simplify our life a lot, do they not?
 
 There are a lot of frameworks for Node.js.
-You can find most of them [here](https://nodeframework.com) and chose one you like the most.
+You can find most of them here _(link is no longer alive, so forget about it)_ and chose one you like the most.
 But, for now, I want to focus your attention on these:
 
 - [Sails](https://sailsjs.org)
