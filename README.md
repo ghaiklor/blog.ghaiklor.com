@@ -1,7 +1,5 @@
 # blog.ghaiklor.com
 
-[![Build Status](https://travis-ci.com/ghaiklor/blog.ghaiklor.com.svg?branch=master)](https://travis-ci.com/ghaiklor/blog.ghaiklor.com)
-
 My personal technical blog where I write, mostly, about Node.js and TypeScript
 but sometimes go deeper into bare metal, compilers, operating systems and the
 likes.
