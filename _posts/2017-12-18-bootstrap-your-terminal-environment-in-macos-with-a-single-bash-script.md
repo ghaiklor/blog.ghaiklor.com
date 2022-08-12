@@ -29,28 +29,28 @@ header:
 
 Some error in the terminal, oh, I forgot to install X...
 
-How did that work before?
-Oh, I had plugin Y, but I don’t remember its name...
+How did that work before? Oh, I had plugin Y, but I don’t remember its name...
 
-Who enjoys remembering all the fishy commands?
-I don’t...
+Who enjoys remembering all the fishy commands? I don’t...
 
-Burn out my own eyes with a default theme and colors?
-No, thanks...
+Burn out my own eyes with a default theme and colors? No, thanks...
 
-Navigating through a plugin repository of your shell to find out all plugins you had again?
-No, thank you...
+Navigating through a plugin repository of your shell to find out all plugins you
+had again? No, thank you...
 
 ## Solution
 
-It might sound silly, but write all the steps, dependencies, plugins, etc. you install somewhere in notes or gist.
+It might sound silly, but write all the steps, dependencies, plugins, etc. you
+install somewhere in notes or gist.
 
-It **was** my solution before.
-I had a gist where I wrote all the steps I needed to do for setting up my glance terminal.
-You can look into it [here](https://gist.github.com/ghaiklor/5c393e1c27cab79a9258).
+It **was** my solution before. I had a gist where I wrote all the steps I needed
+to do for setting up my glance terminal. You can look into it
+[here](https://gist.github.com/ghaiklor/5c393e1c27cab79a9258).
 
-And you know what?
-**It has a huge amount of steps I need to do every time manually**, while setting up my terminal environment: install Git, Homebrew, download iTerm, install color scheme and nerd font, download and configure shell and so on, and so on...
+And you know what? **It has a huge amount of steps I need to do every time
+manually**, while setting up my terminal environment: install Git, Homebrew,
+download iTerm, install color scheme and nerd font, download and configure shell
+and so on, and so on...
 
 **It’s boring, we need to fix that!**
 
@@ -62,18 +62,22 @@ And you know what?
 
 What if, we do the same as before, but write the steps in Bash script instead?
 
-That’s how I came up with an idea of **creating a common Bash script** that will do all the steps I do manually, but on its own.
+That’s how I came up with an idea of **creating a common Bash script** that will
+do all the steps I do manually, but on its own.
 
-GitHub repository was born, Gist updated regarding newly created repo, initial commit with Bash script was created -> [repository link](https://github.com/ghaiklor/iterm-fish-fisher-osx).
+GitHub repository was born, Gist updated regarding newly created repo, initial
+commit with Bash script was created ->
+[repository link](https://github.com/ghaiklor/iterm-fish-fisher-osx).
 
 ## Testing
 
-Turns out, it worked perfect.
-Everything from my setup installed correctly.
+Turns out, it worked perfect. Everything from my setup installed correctly.
 
-**I got my development environment just by executing Bash script with a single command in terminal** _(while drinking my coffee at the kitchen)_.
+**I got my development environment just by executing Bash script with a single
+command in terminal** _(while drinking my coffee at the kitchen)_.
 
-But I didn’t like hard-coded steps, even when I have some of required dependencies, for instance, Command Line Tools.
+But I didn’t like hard-coded steps, even when I have some of required
+dependencies, for instance, Command Line Tools.
 
 Why do I need to install something that I already have?
 
@@ -83,38 +87,39 @@ Why do I need to install something that I already have?
 
 From now on, script could understand what you have installed and what not.
 
-*Do you have Command Line Tools installed? Ok, skip…
-Do you have iTerm installed already? Ok, skip…
-Do you want to have my color scheme or font? No, skip…*
+_Do you have Command Line Tools installed? Ok, skip… Do you have iTerm installed
+already? Ok, skip… Do you want to have my color scheme or font? No, skip…_
 
-I did modifications, script was published and tested out on my friends — works with no issues!
+I did modifications, script was published and tested out on my friends — works
+with no issues!
 
 ## Do I need this script
 
 Well, you may ask this question to yourself and I will give you the answer.
 
-*Do you work with terminal a lot, but too lazy to set it up? — Yes.
-Is my setup fine for you and you like it? — Yes.
-Do you have your own configuration? — Possibly, no.*
+_Do you work with terminal a lot, but too lazy to set it up? — Yes. Is my setup
+fine for you and you like it? — Yes. Do you have your own configuration? —
+Possibly, no._
 
 ## What exactly am I setting up
 
-- Command Line Tools (*xcode-select --install*)
-- Homebrew (*ruby -e {HOMEBREW_INSTALLER}*)
-- iTerm2 (*brew cask install iterm2*)
+- Command Line Tools (_xcode-select --install_)
+- Homebrew (_ruby -e {HOMEBREW_INSTALLER}_)
+- iTerm2 (_brew cask install iterm2_)
 - Material design theme for iTerm2 and patched nerd fonts
-- Fish Shell (*brew install fish*)
-- Fisherman (*curl -o ~/.config/fish/functions/fisher.fish {FISHERMAN}*)
-- 18 plugins for Fish (*curl {MY_INSTALLER.sh} && ./MY_INSTALLER.sh*)
+- Fish Shell (_brew install fish_)
+- Fisherman (_curl -o ~/.config/fish/functions/fisher.fish {FISHERMAN}_)
+- 18 plugins for Fish (_curl {MY_INSTALLER.sh} && ./MY_INSTALLER.sh_)
 
 ## Thanks
 
-Thanks for reading.
-Please share it with your friends who are frustrated with setting up the environment.
+Thanks for reading. Please share it with your friends who are frustrated with
+setting up the environment.
 
-Do you have any suggestions and ideas for further improvements?
-Please, ping me on [Twitter](https://twitter.com/ghaiklor) or raise an [issue in repo](https://github.com/ghaiklor/iterm-fish-fisher-osx/issues/new).
+Do you have any suggestions and ideas for further improvements? Please, ping me
+on [Twitter](https://twitter.com/ghaiklor) or raise an
+[issue in repo](https://github.com/ghaiklor/iterm-fish-fisher-osx/issues/new).
 
 ---
 
-*Eugene Obrezkov, Senior Software Engineer at @elastic.io, Kyiv, Ukraine.*
+_Eugene Obrezkov, Senior Software Engineer at @elastic.io, Kyiv, Ukraine._
