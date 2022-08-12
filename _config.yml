@@ -1,9 +1,9 @@
 # Build Settings
-encoding: utf-8
-include: ['_pages']
-paginate_path: '/page:num/'
+encoding: UTF-8
+include: ["_pages"]
+paginate_path: "/page:num/"
 paginate: 8
-permalink: '/:year/:month/:day/:title/'
+permalink: "/:year/:month/:day/:title/"
 strict_front_matter: true
 timezone: Europe/Kiev
 
@@ -22,7 +22,7 @@ plugins:
 # Default Settings
 defaults:
   - scope:
-      path: ''
+      path: ""
       type: posts
     values:
       layout: single
@@ -34,7 +34,7 @@ defaults:
       share: true
       show_date: true
   - scope:
-      path: ''
+      path: ""
       type: pages
     values:
       layout: single
@@ -54,7 +54,7 @@ name: Eugene Obrezkov
 remote_theme: mmistakes/minimal-mistakes
 repository: ghaiklor/blog.ghaiklor.com
 search: true
-subtitle: 'Personal technical blog of some guy from Kyiv, Ukraine'
+subtitle: "Personal technical blog of some guy from Kyiv, Ukraine"
 teaser: assets/images/placeholder/500x300.png
 title_separator: ⸱
 title: Blog ⸱ Eugene Obrezkov
@@ -76,9 +76,9 @@ social:
   type: Person
   name: Eugene Obrezkov
   links:
-    - 'https://www.facebook.com/ghaiklor'
-    - 'https://twitter.com/ghaiklor'
-    - 'https://github.com/ghaiklor'
+    - "https://www.facebook.com/ghaiklor"
+    - "https://twitter.com/ghaiklor"
+    - "https://github.com/ghaiklor"
 
 # Analytics Settings
 analytics:
@@ -92,39 +92,39 @@ author:
   name: Eugene Obrezkov
   avatar: assets/images/avatar/ghaiklor.jpg
   bio: Software Engineer · Node.js · Rust · D2D (programming languages, compilers, developer tools)
-  location: 'Kyiv, Ukraine'
+  location: "Kyiv, Ukraine"
   links:
     - label: Email
       icon: fas fa-fw fa-envelope-square
-      url: 'mailto:ghaiklor@gmail.com'
+      url: "mailto:ghaiklor@gmail.com"
     - label: Website
       icon: fas fa-fw fa-link
-      url: 'https://ghaiklor.com'
+      url: "https://ghaiklor.com"
     - label: Twitter
       icon: fab fa-fw fa-twitter-square
-      url: 'https://twitter.com/ghaiklor'
+      url: "https://twitter.com/ghaiklor"
     - label: Facebook
       icon: fab fa-fw fa-facebook-square
-      url: 'https://facebook.com/ghaiklor'
+      url: "https://facebook.com/ghaiklor"
     - label: GitHub
       icon: fab fa-fw fa-github
-      url: 'https://github.com/ghaiklor'
+      url: "https://github.com/ghaiklor"
     - label: Instagram
       icon: fab fa-fw fa-instagram
-      url: 'https://instagram.com/ghaiklor'
+      url: "https://instagram.com/ghaiklor"
 
 # Footer Settings
 footer:
   links:
     - label: Twitter
       icon: fab fa-fw fa-twitter-square
-      url: 'https://twitter.com/ghaiklor'
+      url: "https://twitter.com/ghaiklor"
     - label: Facebook
       icon: fab fa-fw fa-facebook-square
-      url: 'https://facebook.com/ghaiklor'
+      url: "https://facebook.com/ghaiklor"
     - label: GitHub
       icon: fab fa-fw fa-github
-      url: 'https://github.com/ghaiklor'
+      url: "https://github.com/ghaiklor"
     - label: Instagram
       icon: fab fa-fw fa-instagram
-      url: 'https://instagram.com/ghaiklor'
+      url: "https://instagram.com/ghaiklor"
