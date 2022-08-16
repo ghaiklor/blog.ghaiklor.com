@@ -7,7 +7,7 @@ name: Make
     branches:
       - master
   schedule:
-    - cron: "0 18 * * *"
+    - cron: "0 20 * * *"
 permissions:
   contents: read
 jobs:
